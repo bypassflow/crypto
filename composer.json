@@ -1,0 +1,48 @@
+{
+    "name": "bypassflow/crypt",
+    "description": "PHP crypt package.",
+    "license": "MIT",
+    "type": "library",
+    "homepage": "http://ickx.jp/",
+    "support": {
+        "issues": "https://github.com/bypassflow/crypt/issues",
+        "source": "https://github.com/bypassflow/crypt"
+    },
+    "authors": [
+        {
+            "name": "Akira Wakaba",
+            "email": "wakabadou@gmail.com",
+            "role": "lead developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.4.0",
+        "ext-openssl": "*",
+        "ext-zlib": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "12",
+        "friendsofphp/php-cs-fixer": "~3.75.0"
+    },
+    "config": {
+        "autoloader-suffix": "bypassflow_crypt"
+    },
+    "files": [
+        "src/functions.php"
+    ],
+    "autoload": {
+        "psr-4": {
+            "bypassflow\\crypt\\": "./src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "bypassflow\\crypt\\tests\\": "./tests/"
+        }
+    },
+    "keywords": [
+        "bypassflow",
+        "crypt"
+    ],
+    "minimum-stability": "dev"
+}
